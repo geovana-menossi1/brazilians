@@ -106,6 +106,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #000;
 }
 .img_logo{
     width: 100px;
@@ -1006,4 +1007,301 @@ h3{
   text-align: center;
   background-color: #cccccc57;
   margin: 10px auto;
+}
+/* /////////////////////////////////////////////////////////// Musica ////////////////////////////////////////////////////////////////// */
+.bannermusica {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+}
+
+.imgmusica {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.texto-banner {
+  position: absolute;
+  bottom: 10%; 
+  left: 5%;
+  color: white;
+}
+
+.animated-text {
+  opacity: 0;
+  position: relative;
+  animation: slideIn 1s forwards;
+}
+
+.animated-text:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.animated-text:nth-child(2) {
+  animation-delay: 1s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  animation: underlineSlide 1s forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes underlineSlide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.generos {
+  padding: 20px;
+  height: 400px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.generos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.genero {
+  width: 18%; 
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.genero i {
+  font-size: 40px;
+  color: #a4eb9e;
+  margin-bottom: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #057042; 
+  border-radius: 50%; 
+  margin: 0 auto; 
+}
+
+.genero h3 {
+  margin: 10px 0;
+  font-size: 1.2em; 
+  color: #057042;
+}
+
+.genero p {
+  font-size: 0.9em;
+  color: #555; 
+}
+.music {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.introduction {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px auto;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  max-width: 800px;
+  position: relative;
+  margin: 10px auto;
+}
+
+.iconMusic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px; 
+  height: 250px;
+  position: relative;
+}
+
+.iconMusic {
+  width: 100%;
+  height: 100%; 
+  border: 10px solid #057042; 
+  border-top: 10px solid black;
+  border-radius: 50%;
+  padding: 15px;
+  position: relative;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.generosMusicais {
+  max-width: 300px;
+  padding: 10px;
+  border: 2px solid #057042; 
+  border-radius: 8px;         
+  background-color: #f9f9f9;
+  color: #333;              
+  font-size: 16px;            
+  appearance: none;          
+  cursor: pointer;           
+  outline: none;            
+  transition: all 0.3s ease;  
+  margin: 10px auto;
+  position: relative;
+}
+
+.generosMusicais:hover {
+  border-color: #4a8a2f;     
+}
+
+.generosMusicais:focus {
+  border-color: #367227;     
+  box-shadow: 0 0 5px rgba(54, 114, 39, 0.5); 
+}
+
+.generosMusicais option {
+  padding: 10px;              
+}
+.generoExp {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: #000;
+  padding: 100px 20px;              
+  text-align: center;              
+  color: white;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;                
+}
+
+.generoExp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;                         
+}
+
+.generoExp h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 2;                           
+  position: relative;                  
+}
+
+.generoExp p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  z-index: 2;                          
+  position: relative;          
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .generoExp {
+      padding: 60px 20px;
+  }
+
+  .generoExp h2 {
+      font-size: 2rem;
+  }
+
+  .generoExp p {
+      font-size: 1rem;
+  }
+}
+.artistas {
+  display: flex;
+  flex-wrap: wrap;                      
+  justify-content: center;   
+  width: 100%;
+  min-height: 300px;
+  background-color: aquamarine;
+}
+
+.artista{
+  position: relative;             
+  width: 20%;                     
+  height: 400px;
+
+}
+.artista img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;               
+  transition: all 0.3s ease;  
+  filter: brightness(50%);       
+}
+
+.nomeArtista {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  opacity: 0;                      
+  transition: all 0.3s ease;        
+  font-size: 1.2rem;
+  opacity: 1;   
 }
