@@ -1305,3 +1305,7 @@ h3{
   font-size: 1.2rem;
   opacity: 1;   
 }
+.artista svg{
+  position: relative;
+  bottom: 40%;
+}
