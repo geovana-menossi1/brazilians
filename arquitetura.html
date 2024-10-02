@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Arquitetura</title>
-    <link rel="stylesheet" href="css/stylesGe2.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bodyGe2">
     <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html"><span class="material-symbols-outlined">home</span> Início</a></li>
+                <li><a href="literatura.html"><span class="material-symbols-outlined">book</span>Literatura</a></li>
+                <li><a href="gastronomia.html"><span class="material-symbols-outlined">skillet</span>Gastronomia</a></li>
+                <li><a href="cinema.html"><span class="material-symbols-outlined">movie</span>Cinema</a></li>
+                <li><a href="musica.html"><span class="material-symbols-outlined">music_note</span>Música</a></li>
+                <li><a href="arquitetura.html"><span class="material-symbols-outlined">account_balance </span>Arquitetura</a></li>
+                <li><a href="sobre.html"><span class="material-symbols-outlined">info</span>Sobre</a></li>
+                <li><a href="contato.html"><span class="material-symbols-outlined">call</span>Contato</a></li>
+            </ul>
+        </div>
+        <div class="site"><h1>The Brazilians</h1></div>
         <div class="logo">
             <img class="img_logo" src="images/logo_official.png" alt="">
         </div>
@@ -284,5 +303,11 @@
             section.style.transform = 'translateY(0)';
         }
     });
+    });
+    const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active'); 
+            menu.classList.toggle('open'); 
     });
 </script>
