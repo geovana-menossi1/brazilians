@@ -1309,3 +1309,168 @@ h3{
   position: relative;
   bottom: 40%;
 }
+.artist-section{
+  width: 100%;
+}
+
+.titulo-artistas {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.artistas-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.artista-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.artista-card:hover {
+  transform: translateY(-10px);
+}
+
+.artista-imagem {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.nome-artista {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.descricao-artista {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+.genre-introduction {
+  width: 100%;
+  height: 500px;
+  background-image: url('../images/bannnerMusica.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genre-content {
+  max-width: 90%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.genre-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.genre-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.genre-history {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.genre-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.genre-link:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.artist-section {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.artist-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.artist-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.hidden {
+  display: none;
+}
