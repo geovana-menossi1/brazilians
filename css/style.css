@@ -1046,6 +1046,7 @@ figure:hover .gallery__caption {
   height: 400px;
   border-radius: 5px;
 }
+<<<<<<< HEAD
 .LitAutores{
   color:#ddd; 
   background-color:#282E34; 
@@ -1065,6 +1066,8 @@ figure:hover .gallery__caption {
   padding: 50px 80px;
   text-align: justify;
 }
+=======
+>>>>>>> 7cddca0d4a02fd70087e9674e575d4f814cd4432
 /* /////////////////////////////////////////////////////////// Gastronomia ////////////////////////////////////////////////////////////////// */
 .carouselGe3 {
   position: relative;
@@ -1127,7 +1130,11 @@ figure:hover .gallery__caption {
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
   margin: 30px 0;
+=======
+  margin: 30px ;
+>>>>>>> 7cddca0d4a02fd70087e9674e575d4f814cd4432
 }
 .image-containerCulinaria {
   position: relative;
@@ -1211,10 +1218,21 @@ h3{
   transition: 0.3s; 
   text-decoration: none;
 }
+<<<<<<< HEAD
 .cardReceita:hover {
   background-color: rgba(255, 251, 251, 0.603);
   filter: brightness(70%); 
   color: #fff; 
+=======
+.cardReceita:hover{
+  filter: brightness(70%); 
+}
+.cardReceita:hover .nomeReceita {
+  color: #fff; 
+}
+.cardReceita:hover {
+  background-color: rgba(255, 251, 251, 0.603);
+>>>>>>> 7cddca0d4a02fd70087e9674e575d4f814cd4432
 }
 .imgReceita{
   width: 100%;
@@ -2397,6 +2415,7 @@ nav svg{
     grid-gap: 0.5rem;
     width: 100%; 
   }
+<<<<<<< HEAD
   .sectionGe2{
     margin-top: 70px;
   }
@@ -2951,3 +2970,229 @@ nav svg{
 
 
 
+=======
+}
+@media (min-width: 770px) and (max-width: 1395px) {
+  nav {
+    display: flex;
+    align-items: center;
+    position: fixed;   
+    top: 0;            
+    left: 0;           
+    width: 100%;       
+    z-index: 1000;
+    background-color: white;
+    justify-content: start;
+}
+  .logo{
+      display: none;
+  }
+  .links{
+      display: none;
+  }
+  .site{
+      display: block;
+      margin: 20px;
+  }
+  .site h1{
+      margin: auto;
+      color: #057042;
+      width: 100%;
+  }
+  .bt_login{
+      display: none;
+  }
+  .search{
+    width: 100%;
+  }
+  .button_search {
+    width: 30%;
+    padding: 5px;
+    margin-left: auto; 
+    margin-right: 10px;  
+  }
+  nav svg{
+      margin-left: 10px;
+      display: block;
+  }
+  .banner{
+   margin-top: 70px;
+    height: auto;
+  }
+  .banner img{
+      height: auto;
+  }
+  .row {
+      padding: 10px;
+  }
+  .overlay {
+      display: none; 
+  }
+  .textoindex, .textodestaques{
+      height: 80px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+  }
+  .textoindex h1, .textodestaques h1, .textopraias h1, .textofauna h1 {
+      font-size: 28px; 
+      text-align: start; 
+      margin-left: 0;
+  }
+  .infoindex {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      width: 100%;
+  }
+  .iii{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .pindex {
+      display: flex;
+      flex-direction: row; 
+      align-items: center; 
+      text-align: center; 
+      width: 100%;
+      min-height: 100px;
+  }
+  .text-wrapper {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+  }
+  .icon-text-wrapper svg {
+      width: 80px; 
+      height: 80px; 
+      margin: 10px auto;
+  }
+  .h1Mobile{
+      display: block;
+  }
+  .icon-text-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .h1Mobile {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #057042;
+  }
+  .ppindex {
+      margin-top: 8px;
+      font-size: 14px;
+      text-align: center;
+  }
+  .highlight{
+      width: 31%;
+      height: 400px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+  }
+  .highlight h3{
+    font-size: 18px;
+    margin: 10px auto;
+    color: #057042;
+  }
+  .highlight p{
+    font-size: 14px;
+    margin: 10px auto;
+  }
+  .highlight-image{
+    height: 150px;
+  }
+  .highlight-container{
+      padding: none;
+      flex-wrap: nowrap;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .row2{
+      display: flex;
+      flex-direction: column;
+  }
+  .card{
+    display: none;
+  }
+  .textopraias, .praiasSelect{
+    display: block;
+  }
+  #map{
+      width: 99%; 
+      height: 400px; 
+      border-radius: 5px;
+      
+  }
+  .gallery__caption{
+      font-size: 10px;
+  }
+  .footer-headingGe{
+      font-size: 16px;
+      text-align: start;
+  }
+  .footer-textGe{
+      font-size: 12px;
+  }
+  .footer-logoGe{
+      font-size: 18px;
+  }
+  .footer-linksGe{
+      display: none;
+  }
+  .iconRow {
+      min-height: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .icon svg{
+      width: 21px;
+      height: 21px;
+  }
+  .menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    justify-content: space-around;
+    height: 30px;
+    margin: 20px;
+    opacity: 1;
+  }
+  .menu.open {
+    opacity: 1; 
+    visibility: visible;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 0.5rem;
+    width: 100%; 
+  }
+}
+>>>>>>> 7cddca0d4a02fd70087e9674e575d4f814cd4432
