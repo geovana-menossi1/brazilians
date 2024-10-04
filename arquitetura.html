@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Arquitetura</title>
-    <link rel="stylesheet" href="css/stylesGe2.css">
 </head>
 <body class="bodyGe2">
     <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html"><span class="material-symbols-outlined">home</span> Início</a></li>
+                <li><a href="literatura.html"><span class="material-symbols-outlined">book</span>Literatura</a></li>
+                <li><a href="gastronomia.html"><span class="material-symbols-outlined">skillet</span>Gastronomia</a></li>
+                <li><a href="cinema.html"><span class="material-symbols-outlined">movie</span>Cinema</a></li>
+                <li><a href="musica.html"><span class="material-symbols-outlined">music_note</span>Música</a></li>
+                <li><a href="arquitetura.html"><span class="material-symbols-outlined">account_balance </span>Arquitetura</a></li>
+                <li><a href="sobre.html"><span class="material-symbols-outlined">info</span>Sobre</a></li>
+                <li><a href="contato.html"><span class="material-symbols-outlined">call</span>Contato</a></li>
+            </ul>
+        </div>
+        <div class="site"><h1>The Brazilians</h1></div>
         <div class="logo">
             <img class="img_logo" src="images/logo_official.png" alt="">
         </div>
@@ -39,11 +60,7 @@
             <div class="search">
                 <input type="text" class="search__input" placeholder="Type your text">
                 <button class="search__button">
-                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-                        <g>
-                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-                        </g>
-                    </svg>
+                    <span class="material-symbols-outlined">search </span>
                 </button>
             </div>
             <button class="bt_login"><a class="link_login" href="login.html">Login</a></button>
@@ -120,9 +137,9 @@
                 </div>
             </div>
             <div class="info_arqui">
-                <h2 class="h2_arquitetura">Arquitetura neoclássica Brasileira</h2>
-                <p class="p_arquitetura">  A arquitetura neoclássica no Brasil, que se desenvolveu entre 1820 e o final do século XIX, refletia uma reação aos exageros do barroco na Europa, alinhando-se ao espírito iluminista e aos modelos clássicos gregos e romanos. Com o Rio de Janeiro tornando-se a capital do Império em 1763, a cidade, agora centro administrativo e recebedora de muitos europeus, precisava de edifícios mais refinados e uma melhor infraestrutura urbana, o que impulsionou a adoção desse estilo arquitetônico.</p>
-                <p class="p_arquitetura">  Com a chegada da Família Real, o Rio de Janeiro recebeu a missão cultural francesa até 1870, destacando o arquiteto Grandjean de Montigny. A arquitetura neoclássica no Brasil ganhou destaque com a inauguração da Imperial Academia em 1826. As edificações neoclássicas eram simétricas, com plantas simplificadas, porão alto, platibandas e, às vezes, frontões, e usavam materiais nobres e técnicas avançadas de construção.</p>
+                <h2 class="h2_arquitetura">Arquitetura Neoclássica Brasileira</h2>
+                <p class="p_arquitetura">A arquitetura neoclássica no Brasil, entre 1820 e o final do século XIX, foi uma resposta ao barroco, inspirada nos modelos clássicos gregos e romanos. Com o Rio de Janeiro como capital do Império, houve a necessidade de edifícios mais refinados e uma melhor infraestrutura urbana, impulsionando esse estilo.</p>
+                <p class="p_arquitetura">A chegada da Família Real e a missão cultural francesa trouxeram destaque para o arquiteto Grandjean de Montigny. A arquitetura neoclássica se destacou pela simetria, plantas simplificadas e o uso de materiais nobres em suas construções.</p>
             </div>
         </section>
         <section class="tipos-arquitetura">
@@ -146,8 +163,8 @@
             </div>
             <div class="info_arqui">
                 <h2 class="h2_arquitetura">Arquitetura moderna brasileira</h2>
-                <p class="p_arquitetura">  O ecletismo dominou o Brasil até o início do século XX, limitando a presença de vanguardas como o Art Nouveau. No entanto, o modernismo, impulsionado por inovações da Revolução Industrial como o concreto armado, ganhou destaque na arquitetura brasileira entre as décadas de 1930 e 1950. Essa transição foi facilitada pela mudança de postura e atitude após a Semana de Arte de 1922, que buscava afirmar a identidade nacional e influenciar outras áreas do conhecimento.</p>
-                <p class="p_arquitetura">  O modernismo brasileiro, impulsionado por um entusiasmo cultural e apoio estatal, buscou uma nova identidade artística, influenciado por europeus como Mies van der Rohe e Le Corbusier. O estilo ganhou destaque com obras de Oscar Niemeyer e Lúcio Costa, sendo uma ferramenta de progresso e industrialização entre as décadas de 1960 e 1970. A primeira grande obra moderna foi o prédio do MES, que apresentava formas geométricas, fachadas separadas da estrutura e o uso de pilotis, vidro contínuo e artes integradas.</p>
+                <p class="p_arquitetura">O ecletismo dominou o Brasil até o início do século XX, limitando a presença de vanguardas como o Art Nouveau. No entanto, o modernismo, impulsionado por inovações da Revolução Industrial como o concreto armado, ganhou destaque na arquitetura brasileira entre as décadas de 1930 e 1950. Essa transição foi facilitada pela mudança de postura e atitude após a Semana de Arte de 1922, que buscava afirmar a identidade nacional e influenciar outras áreas do conhecimento.</p>
+                <p class="p_arquitetura">O modernismo brasileiro, impulsionado por um entusiasmo cultural e apoio estatal, buscou uma nova identidade artística, ganhou destaque com obras de Oscar Niemeyer e Lúcio Costa, sendo uma ferramenta de progresso e industrialização entre as décadas de 1960 e 1970.</p>
             </div>
         </section>
       </main>
@@ -284,5 +301,18 @@
             section.style.transform = 'translateY(0)';
         }
     });
+    });
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active'); 
+        menu.classList.toggle('open'); 
+
+        if (menu.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';  
+        } else {
+            document.body.style.overflow = 'auto';  
+        }
     });
 </script>

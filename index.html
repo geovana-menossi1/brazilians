@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Página Inicial</title>
 </head>
-<style>
-    
-</style>
 <body>
     <nav>
-        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#888"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html"><span class="material-symbols-outlined">home</span> Início</a></li>
+                <li><a href="literatura.html"><span class="material-symbols-outlined">book</span>Literatura</a></li>
+                <li><a href="gastronomia.html"><span class="material-symbols-outlined">skillet</span>Gastronomia</a></li>
+                <li><a href="cinema.html"><span class="material-symbols-outlined">movie</span>Cinema</a></li>
+                <li><a href="musica.html"><span class="material-symbols-outlined">music_note</span>Música</a></li>
+                <li><a href="arquitetura.html"><span class="material-symbols-outlined">account_balance </span>Arquitetura</a></li>
+                <li><a href="sobre.html"><span class="material-symbols-outlined">info</span>Sobre</a></li>
+                <li><a href="contato.html"><span class="material-symbols-outlined">call</span>Contato</a></li>
+            </ul>
+        </div>
         <div class="site"><h1>The Brazilians</h1></div>
         <div class="logo">
             <img class="img_logo" src="images/logo_official.png" alt="">
@@ -46,72 +60,10 @@
             <div class="search">
                 <input type="text" class="search__input" placeholder="Type your text">
                 <button class="search__button">
-                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-                        <g>
-                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-                        </g>
-                    </svg>
+                    <span class="material-symbols-outlined">search </span>
                 </button>
             </div>
             <button class="bt_login"><a class="link_login" href="login.html">Login</a></button>
-        </div>
-        <div class="menu" id="menu">
-            <button class="close-button" id="close-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#000" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                  </svg>
-            </button>
-            <ul>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-house" viewBox="0 0 16 16">
-                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-                      </svg>
-                    <a href="index.html">Início</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-book" viewBox="0 0 16 16">
-                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
-                      </svg>
-                    <a href="literatura.html">Literatura</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-journal" viewBox="0 0 16 16">
-                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
-                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
-                      </svg>
-                    <a href="gastronomia.html">Gastronomia</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-film" viewBox="0 0 16 16">
-                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
-                      </svg>
-                    <a href="cinema.html">Cinema</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
-                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
-                        <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
-                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
-                      </svg><a href="musica.html">Música</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-building" viewBox="0 0 16 16">
-                        <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
-                      </svg><a href="arquitetura.html">Arquitetura</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-info-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                      </svg><a href="sobre.html">Sobre</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-telephone" viewBox="0 0 16 16">
-                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                      </svg><a href="contato.html">Contato</a>
-                </li>
-            </ul>
         </div>
     </nav>
     <main>
@@ -169,7 +121,7 @@
                 <div class="highlight">
                     <img src="images/cataratas.jpg" alt="Destaque 1" class="highlight-image">
                     <h3>Bacias Hidrográficas no Brasil</h3>
-                    <p>As bacias hidrográficas são áreas que drenam água para um único corpo d'água, como rios e lagos. No Brasil, as principais bacias incluem a Amazônica, a do Paraná e a do São Francisco. Essas bacias são essenciais para a gestão de recursos hídricos, o abastecimento de água e a preservação da biodiversidade.</p>
+                    <p>As bacias hidrográficas são áreas que drenam água para um único corpo d'água, como rios e lagos. No Brasil, as principais bacias incluem a Amazônica, a do Paraná e a do São Francisco. São essenciais para o abastecimento de água</p>
                 </div>
                 <div class="highlight">
                     <img src="images/floresta.jpg" alt="Destaque 2" class="highlight-image">
@@ -237,6 +189,10 @@
                     </div>
                 </div>
             </div>
+            <div class="textopraias"><h1>Praias Brasileiras</h1></div>
+            <select name="praiasSelect" id="praiasSelect" class="praiasSelect">
+                <option value="">Escolha uma Praia</option>
+            </select>
             <div id="map"></div>
         </div>
         <div class="row3" style="display: flex; flex-direction: column; position: relative; top: 20px;">
@@ -280,7 +236,7 @@
         </div>
     </main>
     <footer>
-        <div class="footer-containerGe">
+        <div class="footer-containerGe" >
             <div class="footer-sectionGe">
                 <h3 class="footer-headingGe">Criadores do Site</h3>
                 <p class="footer-textGe">Adriano Bedin Junior</p>
@@ -292,7 +248,7 @@
                 <br>
             </div>
             <div class="footer-sectionGe">
-                <h3 class="footer-headingGe">Explore o Mundo da Cultura Brasileira</h3>
+                <h3 class="footer-headingGe">Explore a Cultura Brasileira</h3>
                     <p class="footer-textGe">Descubra nossa rica literatura, gastronomia, arquitetura, cinema e música.</p>
                     <p class="footer-textGe">Conheça mais sobre a diversidade cultural do Brasil.</p>
                 </ul>
@@ -435,30 +391,38 @@
         document.getElementById(beach.id).addEventListener("click", function() {
             map.setView(beach.coords, 14); 
         });
-    });
-    function toggleMenu() {
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
-    }
-    const menuIcon = document.getElementById('menu-icon');
-    const menu = document.getElementById('menu');
-    const closeButton = document.getElementById('close-button');
-
-    // Abre o menu ao clicar no ícone
-    menuIcon.addEventListener('click', () => {
-        menu.classList.toggle('open');
+        
+        var selectElement = document.getElementById('praiasSelect');
+        var option = document.createElement('option');
+        option.value = beach.id;
+        option.text = beach.name;
+        selectElement.appendChild(option);
     });
 
-    // Fecha o menu ao clicar no botão de fechar
-    closeButton.addEventListener('click', () => {
-        menu.classList.remove('open');
-    });
+    document.getElementById('praiasSelect').addEventListener('change', function(event) {
+        var selectedBeachId = event.target.value;
+        var selectedBeach = beaches.find(function(beach) {
+            return beach.id === selectedBeachId;
+        });
 
-    // Fecha o menu ao clicar fora dele (opcional)
-    window.addEventListener('click', (event) => {
-        if (menu.classList.contains('open') && event.target === menu) {
-            menu.classList.remove('open');
+        if (selectedBeach) {
+            map.setView(selectedBeach.coords, 14); 
         }
     });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active'); 
+        menu.classList.toggle('open'); 
+
+        if (menu.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';  
+        } else {
+            document.body.style.overflow = 'auto';  
+        }
+    });
+
 
 </script>
