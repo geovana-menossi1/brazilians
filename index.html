@@ -124,7 +124,7 @@
                 <div class="highlight">
                     <img src="images/cataratas.jpg" alt="Destaque 1" class="highlight-image">
                     <h3>Bacias Hidrográficas no Brasil</h3>
-                    <p>As bacias hidrográficas são áreas que drenam água para um único corpo d'água, como rios e lagos. No Brasil, as principais bacias incluem a Amazônica, a do Paraná e a do São Francisco. Essas bacias são essenciais para a gestão de recursos hídricos, o abastecimento de água e a preservação da biodiversidade.</p>
+                    <p>As bacias hidrográficas são áreas que drenam água para um único corpo d'água, como rios e lagos. No Brasil, as principais bacias incluem a Amazônica, a do Paraná e a do São Francisco. São essenciais para o abastecimento de água</p>
                 </div>
                 <div class="highlight">
                     <img src="images/floresta.jpg" alt="Destaque 2" class="highlight-image">
@@ -192,6 +192,10 @@
                     </div>
                 </div>
             </div>
+            <div class="textopraias"><h1>Praias Brasileiras</h1></div>
+            <select name="praiasSelect" id="praiasSelect" class="praiasSelect">
+                <option value="">Escolha uma Praia</option>
+            </select>
             <div id="map"></div>
         </div>
         <div class="row3" style="display: flex; flex-direction: column; position: relative; top: 20px;">
@@ -235,7 +239,7 @@
         </div>
     </main>
     <footer>
-        <div class="footer-containerGe">
+        <div class="footer-containerGe" >
             <div class="footer-sectionGe">
                 <h3 class="footer-headingGe">Criadores do Site</h3>
                 <p class="footer-textGe">Adriano Bedin Junior</p>
@@ -247,7 +251,7 @@
                 <br>
             </div>
             <div class="footer-sectionGe">
-                <h3 class="footer-headingGe">Explore o Mundo da Cultura Brasileira</h3>
+                <h3 class="footer-headingGe">Explore a Cultura Brasileira</h3>
                     <p class="footer-textGe">Descubra nossa rica literatura, gastronomia, arquitetura, cinema e música.</p>
                     <p class="footer-textGe">Conheça mais sobre a diversidade cultural do Brasil.</p>
                 </ul>
@@ -390,12 +394,38 @@
         document.getElementById(beach.id).addEventListener("click", function() {
             map.setView(beach.coords, 14); 
         });
+        
+        var selectElement = document.getElementById('praiasSelect');
+        var option = document.createElement('option');
+        option.value = beach.id;
+        option.text = beach.name;
+        selectElement.appendChild(option);
     });
+
+    document.getElementById('praiasSelect').addEventListener('change', function(event) {
+        var selectedBeachId = event.target.value;
+        var selectedBeach = beaches.find(function(beach) {
+            return beach.id === selectedBeachId;
+        });
+
+        if (selectedBeach) {
+            map.setView(selectedBeach.coords, 14); 
+        }
+    });
+
     const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active'); 
-            menu.classList.toggle('open'); 
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active'); 
+        menu.classList.toggle('open'); 
+
+        if (menu.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';  
+        } else {
+            document.body.style.overflow = 'auto';  
+        }
     });
+
 
 </script>

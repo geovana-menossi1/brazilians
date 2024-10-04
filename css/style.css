@@ -321,33 +321,33 @@ footer {
 /* /////////////////////////////////////////////////////////// Banner Brazilians ////////////////////////////////////////////////////////////////// */
 .banner{
     width: 100%;
-    height: 600px;
+    height: auto;
+    margin-bottom: 20px;
 }
 .bannerBr{
     width: 100%;
-    height: 800px;
+    height: auto;
     position: relative;
     top: 10px;
 }
 /* /////////////////////////////////////////////////////////// Conteudo part1 ////////////////////////////////////////////////////////////////// */
 .row {
   width: 100%;
-  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 200px;
   background-size: cover;
   background-position: center;
+  margin: 20px auto;
 }
-
 .textoindex {
   width: 90%;
   text-align: start;
   padding: 20px;
   align-items: center;
   border-left: 5px solid #057042;
-  margin: 20px 0;
+  margin: 20px auto;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -358,13 +358,6 @@ footer {
 
 .textoindex:hover {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.textoindex h1 {
-  font-size: 2.5em;
-  color: #057042;
-  margin-bottom: 20px;
-  line-height: 1.2;
 }
 
 .infoindex {
@@ -423,7 +416,7 @@ footer {
   justify-content: space-around;
 }
 .highlights {
-  padding: 20px;
+  padding: 10px;
   background-color: #f9f9f9;
   text-align: center;
   display: flex;
@@ -569,6 +562,39 @@ li {
   background-color: #1C8C4D; 
   width: 95%; 
 }
+.textopraias, .praiasSelect{
+  display: none;
+}
+.textopraias {
+  width: 100%;
+  text-align: start;
+  padding: 20px;
+  align-items: center;
+  border-left: 5px solid #057042;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 10; 
+}
+.praiasSelect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #057042; 
+  border-radius: 8px;         
+  background-color: #f9f9f9;
+  color: #333;              
+  font-size: 16px;            
+  appearance: none;          
+  cursor: pointer;           
+  outline: none;            
+  transition: all 0.3s ease;  
+  margin: 10px auto;
+  position: relative;
+}
+
 /* /////////////////////////////////////////////////////////// Login ////////////////////////////////////////////////////////////////// */
 .login {
     background-image: url(../images/3764332.jpg);
@@ -908,12 +934,6 @@ figure:hover .gallery__caption {
   letter-spacing: 10px;
 }
 
-
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
-}
 
 .time{
   width: 100%;
@@ -1614,19 +1634,6 @@ h3{
   margin-right: auto;
 }
 
-@media (max-width: 768px) {
-  .generoExp {
-      padding: 60px 20px;
-  }
-
-  .generoExp h2 {
-      font-size: 2rem;
-  }
-
-  .generoExp p {
-      font-size: 1rem;
-  }
-}
 .artistas {
   display: flex;
   flex-wrap: wrap;                      
@@ -2050,7 +2057,6 @@ h3{
   width: 100%;
   height: 100%; 
   background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   transition: left 0.3s ease; 
   z-index: 1000;
 }
@@ -2072,8 +2078,9 @@ h3{
   top: 20px;
   margin: 5px auto;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   padding: 5px;
+  padding: 15px;
 }
 
 .menu a {
@@ -2081,17 +2088,11 @@ h3{
   align-items: center;    
   text-decoration: none;  
   color: #333;   
-  position: relative;
-  left: 10px; 
-  top: 2px;
 }
 
 .menu a span {
   margin-right: 3px;     
   font-size: 22px;  
-  position: relative;  
-  bottom: 1px;  
-  right: 4px;
 }
 
 .menu-toggle {
@@ -2110,8 +2111,8 @@ h3{
 }
 .bar {
   width: 100%;
-  height: 5px;
-  background-color: #057042;
+  height: 3px;
+  background-color: #000;
   transition: all 0.3s ease;
 }
 
@@ -2164,11 +2165,17 @@ nav svg{
   display: none;
 }
 @media (max-width: 768px) {
-  nav{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
+  nav {
+    display: flex;
+    align-items: center;
+    position: fixed;   
+    top: 0;            
+    left: 0;           
+    width: 100%;       
+    z-index: 1000;
+    background-color: white;
+    justify-content: space-between;
+}
   .logo{
       display: none;
   }
@@ -2177,10 +2184,12 @@ nav svg{
   }
   .site{
       display: block;
+      margin: 10px auto;
   }
   .site h1{
       font-size: 18px;
       margin: auto;
+      color: #057042;
   }
   .bt_login{
       display: none;
@@ -2188,19 +2197,19 @@ nav svg{
   .button_search{
       width: 50%;
       padding: 5px;
-  }
-  .search{
-      width: 100%;
+      display: none;
   }
   nav svg{
       margin-left: 10px;
       display: block;
   }
   .banner{
-      height: 300px;
+    margin-top: 70px;
+    height: auto;
+    margin-bottom: 10px;
   }
   .banner img{
-      height: 300px;
+      height: auto;
   }
   .row {
       padding: 10px;
@@ -2216,9 +2225,9 @@ nav svg{
       width: 100%;
 
   }
-  .textoindex h1, .textodestaques h1 {
-      font-size: 18px; 
-      text-align: center; 
+  .textoindex h1, .textodestaques h1, .textopraias h1, .textofauna h1 {
+      font-size: 20px; 
+      text-align: start; 
   }
   .infoindex {
       display: flex;
@@ -2284,8 +2293,10 @@ nav svg{
       text-align: center;
   }
   .highlight{
-      width: 100%;
+      width: 95%;
       margin: none;
+      font-size: 12px;
+      height: 450px;
   }
   .highlight-container{
       padding: none;
@@ -2293,51 +2304,19 @@ nav svg{
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
+      text-align: start;
+      color: #057042;
   }
   .row2{
       display: flex;
-      flex-direction: row;
-  }
-  .card {
-      width: 100%;
-      height: 400px;
-  }
-
-  .content {
-      height: 100%;
-  }
-
-  .beach {
-      font-size: 1em;
-      height: 30px;
-      margin: none;
-  }
-
-  .beach p {
-      font-size: 10px;
-      left: 10px;
-      width: 100%;
-  }
-  .backge{
-      display: flex;
-      align-items: center;
       flex-direction: column;
-      justify-content: center;
   }
-  .praiasss svg {
-      height: 20px;
-      width: 20px;
+  .card{
+    display: none;
   }
-  .backge{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-  }
-  .praiasss{
-      width: 100%;
-      height: 400px;
+  .textopraias, .praiasSelect{
+    display: block;
   }
   #map{
       width: 99%; 
@@ -2348,35 +2327,39 @@ nav svg{
   .gallery__caption{
       font-size: 10px;
   }
-  .footer-sectionGe{
-  }
   .footer-headingGe{
       font-size: 12px;
+      text-align: start;
   }
   .footer-textGe{
       font-size: 8px;
   }
   .footer-logoGe{
-      font-size: 14px;
+      font-size: 12px;
   }
   .footer-linksGe{
       display: none;
   }
   .iconRow {
       min-height: 30px;
-      max-width: 100%;
+      width: 100%;
       display: flex;
-      flex-wrap: wrap; 
-      justify-content: center; 
-      gap: 5px; 
+      flex-direction: row;
   }
-  .icon{
-      width: 30px;
-      height: 30px;
+  .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   .icon svg{
-      width: 18px;
-      height: 18px;
+      width: 11px;
+      height: 11px;
   }
   .menu-toggle {
     cursor: pointer;
@@ -2391,5 +2374,235 @@ nav svg{
   .menu.open {
     opacity: 1; 
     visibility: visible;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 0.5rem;
+    width: 100%; 
+  }
+}
+@media (min-width: 770px) and (max-width: 1395px) {
+  nav {
+    display: flex;
+    align-items: center;
+    position: fixed;   
+    top: 0;            
+    left: 0;           
+    width: 100%;       
+    z-index: 1000;
+    background-color: white;
+    justify-content: start;
+}
+  .logo{
+      display: none;
+  }
+  .links{
+      display: none;
+  }
+  .site{
+      display: block;
+      margin: 20px;
+  }
+  .site h1{
+      margin: auto;
+      color: #057042;
+      width: 100%;
+  }
+  .bt_login{
+      display: none;
+  }
+  .search{
+    width: 100%;
+  }
+  .button_search {
+    width: 30%;
+    padding: 5px;
+    margin-left: auto; 
+    margin-right: 10px;  
+  }
+  nav svg{
+      margin-left: 10px;
+      display: block;
+  }
+  .banner{
+   margin-top: 70px;
+    height: auto;
+  }
+  .banner img{
+      height: auto;
+  }
+  .row {
+      padding: 10px;
+  }
+  .overlay {
+      display: none; 
+  }
+  .textoindex, .textodestaques{
+      height: 80px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+  }
+  .textoindex h1, .textodestaques h1, .textopraias h1, .textofauna h1 {
+      font-size: 28px; 
+      text-align: start; 
+      margin-left: 0;
+  }
+  .infoindex {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      width: 100%;
+  }
+  .iii{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .pindex {
+      display: flex;
+      flex-direction: row; 
+      align-items: center; 
+      text-align: center; 
+      width: 100%;
+      min-height: 100px;
+  }
+  .text-wrapper {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+  }
+  .icon-text-wrapper svg {
+      width: 80px; 
+      height: 80px; 
+      margin: 10px auto;
+  }
+  .h1Mobile{
+      display: block;
+  }
+  .icon-text-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .h1Mobile {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #057042;
+  }
+  .ppindex {
+      margin-top: 8px;
+      font-size: 14px;
+      text-align: center;
+  }
+  .highlight{
+      width: 31%;
+      height: 400px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+  }
+  .highlight h3{
+    font-size: 18px;
+    margin: 10px auto;
+    color: #057042;
+  }
+  .highlight p{
+    font-size: 14px;
+    margin: 10px auto;
+  }
+  .highlight-image{
+    height: 150px;
+  }
+  .highlight-container{
+      padding: none;
+      flex-wrap: nowrap;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .row2{
+      display: flex;
+      flex-direction: column;
+  }
+  .card{
+    display: none;
+  }
+  .textopraias, .praiasSelect{
+    display: block;
+  }
+  #map{
+      width: 99%; 
+      height: 400px; 
+      border-radius: 5px;
+      
+  }
+  .gallery__caption{
+      font-size: 10px;
+  }
+  .footer-headingGe{
+      font-size: 16px;
+      text-align: start;
+  }
+  .footer-textGe{
+      font-size: 12px;
+  }
+  .footer-logoGe{
+      font-size: 18px;
+  }
+  .footer-linksGe{
+      display: none;
+  }
+  .iconRow {
+      min-height: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .icon svg{
+      width: 21px;
+      height: 21px;
+  }
+  .menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    justify-content: space-around;
+    height: 30px;
+    margin: 20px;
+    opacity: 1;
+  }
+  .menu.open {
+    opacity: 1; 
+    visibility: visible;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 0.5rem;
+    width: 100%; 
   }
 }
