@@ -1215,16 +1215,6 @@ h3{
   background-color: rgba(255, 251, 251, 0.603);
   filter: brightness(70%); 
   color: #fff; 
-=======
-.cardReceita:hover{
-  filter: brightness(70%); 
-}
-.cardReceita:hover .nomeReceita {
-  color: #fff; 
-}
-.cardReceita:hover {
-  background-color: rgba(255, 251, 251, 0.603);
->>>>>>> 7cddca0d4a02fd70087e9674e575d4f814cd4432
 }
 .imgReceita{
   width: 100%;
